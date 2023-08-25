@@ -8,35 +8,46 @@ body {
     background-color: black;
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    height: 100hv
+    height: 100hv;
+    margin: 0;
 }
 
 nav {
     position: absolute;
     top: 15px;
-    padding-left: 30px;
-    padding-right: 10px;
-    display: flex;
     width: 100%;
     border: 2px solid #fff;;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-
+    text-align: center;
+    
 }
 
-nav ul li {
-    font-family: 'Allan', cursive;
-    list-style: none;
-    display: inline-block;
-    flex-direction: row;
-    font-size: 2.5rem;
-    padding: 10px 30px;
-    color: #fff;
+button {
+ padding: 10px 20px;
+ border-radius: 8px;
+ background: transparent;
+ transition: .5s ease;
+ border: 1px solid #ffffff80;
+ color: #00e1ff;
+ margin: 10px;
+ align-items: center;
+ 
+}
 
+button:hover,:focus {
+    color: white;
+    background: #00eeff;
+    border: 1px solid #00e1ff;
+    text-shadow: 0 0 5px #ffffff;
+    text-shadow: 0 0 10px #ffffff;
+    text-shadow: 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #00e1ff;
+    box-shadow: 0 0 20px #00e1ff;
+    box-shadow: 0 0 50px #00e1ff;
+    box-shadow: 0 0 100px #00e1ff;
 }
 
 .wrapper {
@@ -44,12 +55,13 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .txt {
     color: #ffffff;
     background-color: black;
-    font-size:200px;
+    font-size: 10rem;
     font-weight: bold;
     font-family: Arial;
     text-transform: uppercase;
@@ -94,7 +106,28 @@ nav ul li {
 
 footer {
     position: absolute;
-    bottom: 0px;
+    bottom: 10%;
     
+}
 
+footer ul li {
+    font-size: 3.5rem;
+    list-style-type: none;
+    display: inline-block;
+    color: #00eeff;
+    margin: 15px;
+
+}
+
+footer ul li:hover {
+    cursor: pointer;
+    transition: 0.9s;
+    transform: rotate(360deg);
+    text-shadow: 0 0 5px #ffffff;
+    text-shadow: 0 0 10px #ffffff;
+    text-shadow: 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #00e1ff;
+    box-shadow: 0 0 20px #00e1ff;
+    box-shadow: 0 0 50px #00e1ff;
+    box-shadow: 0 0 100px #00e1ff;
 }
