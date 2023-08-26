@@ -10,18 +10,20 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    overflow: hidden;
-    height: 100hv;
     margin: 0;
+    height: 100vh;
+    overflow: hidden;
+  
 }
 
+/* Navigation Bar */
+
 nav {
-    position: absolute;
-    top: 15px;
-    width: 100%;
+    position: relative;
     border: 2px solid #fff;;
     align-items: center;
     text-align: center;
+    justify-content: center;
     
 }
 
@@ -32,8 +34,10 @@ button {
  transition: .5s ease;
  border: 1px solid #ffffff80;
  color: #00e1ff;
- margin: 10px;
+ margin: 15px;
  align-items: center;
+ font-size: 1.5rem;
+ font-family: Merienda 
  
 }
 
@@ -102,13 +106,34 @@ button:hover,:focus {
     }
 }
 
+/* About Page */
 
+.about {
+    display: none;
+    color: white;
+    align-items: center;
+    font-size: 2rem;
+    }
+
+    .info {
+  
+    }
+
+    img {
+        padding: 20px;
+        height: 40%;
+        width: 10%;
+    }
+
+/* Footer */
 
 footer {
-    position: absolute;
-    bottom: 10%;
-    
+    position: relative;
+    width: 100%;
+    align-items: center;
+    text-align: center;
 }
+
 
 footer ul li {
     font-size: 3.5rem;
@@ -116,6 +141,7 @@ footer ul li {
     display: inline-block;
     color: #00eeff;
     margin: 15px;
+
 
 }
 
