@@ -112,21 +112,46 @@ button:hover,:focus {
     display: none;
     color: white;
     align-items: center;
-    font-size: 2rem;
-    justify-content: space-between;
-    margin: 30px;
+    font-size: 1.5rem;
+    justify-content: center;
+    margin: 10px;
     flex-wrap: wrap;
+
     }
 
     .info {
         text-align: center;
-        width: 50%;
-        margin: 30px
+        width: 45%;
+        height: 40%;
     }
 
-    .image {
-     margin: auto;
+    .about img {
+     display: block;
+     align-content: center;
+     margin-left: auto;
+     margin-right: auto;
+     height: 40%;
+     width: 50%;
+     border:#00e1ff 5px solid;
+     border-radius: 5px
     }
+
+/* Projects */
+
+.projects {
+    display: none;
+    color: white;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: center;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.projects img {
+    width: 30%;
+}
+
 /* Footer */
 
 footer {
