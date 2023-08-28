@@ -10,17 +10,23 @@ const aboutPageGenerate = () => {
     wrapperEl.style.display = "none";
     aboutEl.style.display = 'flex'
     projectEl.style.display = 'none'
+    contactEl.style.display = 'none'
 }
 
 const projectsPageGenerate = () => {
     wrapperEl.style.display = 'none';
     aboutEl.style.display = 'none';
     projectEl.style.display = 'flex'
+    contactEl.style.display = 'none'
 }
 
 const contactPageGenerate = () => {
-
+    wrapperEl.style.display = 'none';
+    aboutEl.style.display = 'none';
+    projectEl.style.display = 'none'
+    contactEl.style.display = 'flex'
 }
 
 aboutBtn.addEventListener('click', aboutPageGenerate)
 projectsBtn.addEventListener('click', projectsPageGenerate)
+contactsBtn.addEventListener('click', contactPageGenerate)
