@@ -41,26 +41,24 @@
     <!-- Projects -->
 
     <div class = 'projects'>
+        <div class = about>
         <h1>Projects</h1>
+
         <p>Dad Joke Generator</p>
         <a href = "https://wagnergabe.github.io/Dadjoke-Generator/" target = _blank><img src = './assets/images/dadjokegen.png'></a>
+    </div>
     </div>
 
 
     <!--Contact-->
     <div class = 'contact'>
-        <h2>Contact Me</h2>
-        <form action="/contact" method="post">
-         <label for="name">Name:</label>
-         <input type="text" name="name" id="name">
-         <br>
-         <label for="email">Email:</label>
-         <input type="email" name="email" id="email">
-         <br>
-         <label for="message">Message:</label>
-         <textarea name="message" id="message" rows="10" cols="50"></textarea>
-         <br>
-         <input type="submit" value="Submit">
+        <form>
+            <h3>Contact me</h3>
+            <input type="text"  id="name" placeholder="Your Name" required>
+            <input type="email"  id="email" placeholder="Email" required>
+            <input type="text"  id="phone" placeholder="Phone Number (Optional)">
+            <textarea id = "message" rows="4" placeholder="Message"></textarea>
+            <button type = 'submit'>Send</button>
         </form>
     </div>
 

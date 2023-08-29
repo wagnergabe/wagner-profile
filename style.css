@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Allan&family=Merienda&display=swap');
 * {
     box-sizing: border-box;
+    font-family: Merienda 
 }
 
 body {
@@ -37,7 +38,7 @@ button {
  margin: 15px;
  align-items: center;
  font-size: 1.5rem;
- font-family: Merienda 
+
  
 }
 
@@ -155,6 +156,46 @@ button:hover,:focus {
 /* Contact  */
 .contact {
     display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+    width: 90%;
+    border: #00e1ff solid 4px;
+    border-radius: 10px;
+    margin: 30px 0px;
+}
+
+form h3 {
+    color:rgba(6, 227, 250,1);
+    font-weight: 800;
+    margin-bottom: 20px; 
+}
+
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+
+form button {
+    padding: 15px;
+    background-color:#00eeff;
+    color: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
 }
 
 .container {
@@ -163,27 +204,6 @@ button:hover,:focus {
     padding: 20px;
    }
    
-   input[type=text],
-   textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-   }
-   
-   input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-   }
-   
-   input[type=submit]:hover {
-    background-color: #45a049;
-   }
 
 /* Footer */
 
