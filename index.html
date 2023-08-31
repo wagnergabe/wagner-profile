@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/0e200d7ce6.js" crossorigin="anonymous"></script>
 </head>
-<div>
+<>
 
     <nav>
         <button id = 'about'>About</button>
@@ -25,18 +25,15 @@
     
     <!-- about -->
     <div class="about">
-        <div class = "info">
         <h1>Gabriel Wagner</h1>
 
-            <p>I recently graduated from the University of Minnesota's full stack web development course.</p>
-            <p>In this course, I learned the skills necessary to build and deploy web applications, including HTML, CSS, JavaScript, PHP, and MySQL. I also learned about the different aspects of web development, such as front-end development, back-end development, and database design.</p>
-            <p>I am passionate about web development and I am excited to use my skills to create innovative and user-friendly applications.</p>
-            <p>I am currently looking for a full-time web development position. If you are interested in hiring me, please contact me</p>
-            </div>
-            <div class = 'image'>
+            <p>I recently graduated from the University of Minnesota's full stack web development course.
+            In this course, I learned the skills necessary to build and deploy web applications, including HTML, CSS, JavaScript, PHP, and MySQL. I also learned about the different aspects of web development, such as front-end development, back-end development, and database design.
+            I am passionate about web development and I am excited to use my skills to create innovative and user-friendly applications.
+            I am currently looking for a full-time web development position. If you are interested in hiring me, please contact me</p>
                 <img src = './assets/images/Oyamu taberu.jpg'>
-        </div>
-        </div>
+            </div>
+
 
     <!-- Projects -->
 
@@ -57,14 +54,15 @@
 
     <!--Contact-->
     <div class = 'contact'>
-        <form>
             <h3>Contact me</h3>
+            <form action="https://formsubmit.co/wagner.s.gabriel@gmail.com" method="POST">
             <input type="text"  id="name" placeholder="Your Name" required>
             <input type="email"  id="email" placeholder="Email" required>
             <input type="text"  id="phone" placeholder="Phone Number (Optional)">
             <textarea id = "message" rows="4" placeholder="Message"></textarea>
-            <button type = 'submit'>Send</button>
+            <button type = 'submit' id = "submitbtn">Send</button>
         </form>
+        <h4 id = "thankYou">Thank you!</h4>
     </div>
 
     <footer>

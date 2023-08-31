@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Allan&family=Merienda&display=swap');
 * {
     box-sizing: border-box;
-    font-family: Merienda 
+    font-family: Merienda;
+    margin: 0;
 }
 
 body {
@@ -11,20 +12,17 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin: 0;
-    height: 100vh;
- 
-  
 }
 
 /* Navigation Bar */
 
 nav {
-    position: relative;
+    position: flex;
     border: 2px solid #fff;;
     align-items: center;
     text-align: center;
     justify-content: center;
+    margin-top: 50px;
     
 }
 
@@ -56,7 +54,7 @@ button:hover,:focus {
 }
 
 .wrapper {
-    height: 800px;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,31 +109,23 @@ button:hover,:focus {
 
 .about {
     display: none;
-    color: white;
     align-items: center;
-    font-size: 1.5rem;
+    color: white;
+    flex-direction: row;
+    margin: 10px 10%;
     justify-content: center;
-    margin: 10px;
-    flex-wrap: wrap;
-
+    text-align: center;
     }
 
-    .info {
-        text-align: center;
-        width: 45%;
-        height: 40%;
-    }
+.about {
+  
+}
+.about img {
+    max-width: 50%;
+}
 
-    .about img {
-     display: block;
-     align-content: center;
-     margin-left: auto;
-     margin-right: auto;
-     height: 40%;
-     width: 50%;
-     border:#00e1ff 5px solid;
-     border-radius: 5px
-    }
+  
+
 
 /* Projects */
 
@@ -175,6 +165,7 @@ button:hover,:focus {
     display: none;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 form{
@@ -216,11 +207,21 @@ form button {
     border-radius: 30px;
 }
 
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-   }
+
+
+h4 {
+    display: none;
+    position: relative;
+    color: white;
+    font-size: 3rem;
+    animation: fadeIn 3s;
+    
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    50% { opacity: 1;}
+}
    
 
 /* Footer */
